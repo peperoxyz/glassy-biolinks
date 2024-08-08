@@ -1,0 +1,124 @@
+body {
+	background-image: url("/assets/images/background.jpg");
+	background-size: cover;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	position: fixed;
+	opacity: 50%;
+}
+
+.content {
+	margin-top: 5rem;
+	z-index: 2;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+#avatar {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 100%;
+	position: absolute;
+	z-index: 99;
+}
+
+.avatar-border {
+	position: absolute;
+	backdrop-filter: blur(14.7px) saturate(171%);
+	background-color: rgb(120 175 172 / 24%);
+	border-radius: 100%;
+	width: 5.5rem;
+	height: 5.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+}
+
+.card {
+	border: 1rem solid white;
+	width: 420px;
+	backdrop-filter: blur(14.7px) saturate(171%);
+	background-color: rgba(27, 67, 65, 0.33);
+	border-radius: 12px;
+	border: 1px solid rgba(32, 141, 126, 0.13);
+	z-index: 1;
+	margin-top: -1.7rem;
+	padding-bottom: 4rem;
+}
+
+.header-name {
+	padding: 1rem 2rem;
+	backdrop-filter: blur(14.7px) saturate(171%);
+	background-color: rgb(120 175 172 / 24%);
+	border-radius: 0.5rem;
+	border: 1px solid rgba(32, 141, 126, 0.13);
+	color: white;
+	z-index: 2;
+	margin-top: 4.6rem;
+	font-size: 1.3rem;
+}
+
+.socials {
+	padding: 1rem;
+	margin-top: 1rem;
+}
+
+.socials ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	align-items: center;
+	gap: 2.3rem;
+	padding: 1rem 0rem;
+}
+
+.divider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1.4rem;
+	color: yellow;
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+}
+
+.menu ul li {
+	width: 50%;
+	padding: 1.3rem 2rem;
+	backdrop-filter: blur(10.9px) saturate(164.8%);
+	background-color: rgb(120 175 172 / 24%);
+	border-radius: 0.6rem;
+	border: 1px solid rgba(32, 141, 126, 0.13);
+	display: flex;
+	justify-content: center;
+	color: white;
+	gap: 0.6rem;
+	text-decoration: none;
+}
