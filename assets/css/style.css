@@ -1,6 +1,10 @@
+/* color scheme: variables */
+
 body {
 	background-image: url("/assets/images/background.jpg");
 	background-size: cover;
+	font-family: "Poppins", sans-serif;
+	height: 80vh;
 }
 
 .overlay {
@@ -11,17 +15,18 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	opacity: 50%;
+	opacity: 40%;
 }
 
 .content {
-	margin-top: 5rem;
+	margin-top: -3rem;
 	z-index: 2;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	transform: scale(0.76);
 }
 
 .header {
@@ -54,15 +59,17 @@ body {
 }
 
 .card {
-	border: 1rem solid white;
-	width: 420px;
+	width: 500px;
 	backdrop-filter: blur(14.7px) saturate(171%);
 	background-color: rgba(27, 67, 65, 0.33);
 	border-radius: 12px;
-	border: 1px solid rgba(32, 141, 126, 0.13);
+	border: 1px solid rgb(96 211 195 / 48%);
 	z-index: 1;
 	margin-top: -1.7rem;
-	padding-bottom: 4rem;
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .header-name {
@@ -74,12 +81,13 @@ body {
 	color: white;
 	z-index: 2;
 	margin-top: 4.6rem;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
+	font-weight: medium;
 }
 
 .socials {
-	padding: 1rem;
-	margin-top: 1rem;
+	padding: 2rem;
+	margin-bottom: -2.3rem;
 }
 
 .socials ul {
@@ -88,7 +96,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 2.3rem;
-	padding: 1rem 0rem;
+	padding: 0rem 0rem;
 }
 
 .divider {
@@ -100,17 +108,29 @@ body {
 }
 
 .menu ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+	text-decoration: none;
+}
+
+.menu ul a {
+	width: 85%;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
 	align-items: center;
 }
 
+.menu-link {
+	text-decoration: none !important;
+}
+
 .menu ul li {
-	width: 50%;
+	width: 60%;
 	padding: 1.3rem 2rem;
 	backdrop-filter: blur(10.9px) saturate(164.8%);
 	background-color: rgb(120 175 172 / 24%);
@@ -120,5 +140,51 @@ body {
 	justify-content: center;
 	color: white;
 	gap: 0.6rem;
-	text-decoration: none;
+}
+
+.menu ul li:hover {
+	background-color: transparent;
+	color: white;
+	transition: background-color 0.3s ease;
+	cursor: pointer;
+	box-shadow: inset -1px 1px 9px 3px #29ced16b;
+}
+
+.socials ul li img:hover {
+	transform: scale(1.5);
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.card {
+		width: 90%;
+	}
+
+	.menu ul a {
+		width: 80%;
+	}
+}
+
+/* shining effect */
+
+.card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -140%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+	transform: skewX(-45deg);
+	transition: left 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover::before {
+	left: 180%;
 }
