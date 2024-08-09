@@ -81,7 +81,7 @@ body {
 	z-index: 2;
 	margin-top: 4.6rem;
 	font-size: 1.2rem;
-	font-weight: medium;
+	font-weight: 500;
 }
 
 .socials {
@@ -98,12 +98,16 @@ body {
 	padding: 0rem 0rem;
 }
 
+.socials ul li img {
+	width: 2.8rem;
+}
+
 .divider {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 1.4rem;
-	color: yellow;
+	color: greenyellow;
 }
 
 .menu ul {
@@ -112,16 +116,19 @@ body {
 	gap: 1rem;
 	width: 100%;
 	text-decoration: none;
+	padding: 0rem;
+	align-items: center;
 }
 
 .menu ul a {
-	width: 85%;
+	width: 92%;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-size: 1.1rem;
 }
 
 .menu-link {
@@ -155,13 +162,32 @@ body {
 	cursor: pointer;
 }
 
-@media (max-width: 768px) {
+.footer {
+	margin-top: 1rem;
+	color: greenyellow;
+	font-weight: 500;
+}
+
+@media (max-width: 540px) {
 	.card {
-		width: 90%;
+		width: 97%;
 	}
 
 	.menu ul a {
-		width: 80%;
+		width: 95%;
+		font-size: 1rem;
+	}
+
+	.socials ul li img {
+		width: 2rem;
+	}
+
+	.menu ul li img {
+		width: 1.4rem;
+	}
+
+	.header-name {
+		font-size: 1rem;
 	}
 }
 
