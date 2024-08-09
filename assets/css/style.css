@@ -65,7 +65,7 @@ body {
 	margin-top: -1.7rem;
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 1.5rem;
+	padding-bottom: 3rem;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
@@ -84,7 +84,7 @@ body {
 }
 
 .socials {
-	padding: 4rem;
+	padding: 3.3rem;
 	margin-bottom: -1.3rem;
 }
 
