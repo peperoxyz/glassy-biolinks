@@ -17,7 +17,6 @@ body {
 }
 
 .content {
-	margin-top: -3rem;
 	z-index: 2;
 	position: relative;
 	display: flex;
@@ -85,8 +84,8 @@ body {
 }
 
 .socials {
-	padding: 2rem;
-	margin-bottom: -2.3rem;
+	padding: 4rem;
+	margin-bottom: -1.3rem;
 }
 
 .socials ul {
@@ -95,7 +94,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 2.3rem;
-	padding: 0rem 0rem;
 }
 
 .socials ul li img {
@@ -116,15 +114,12 @@ body {
 	gap: 1rem;
 	width: 100%;
 	text-decoration: none;
-	padding: 0rem;
 	align-items: center;
 }
 
 .menu ul a {
 	width: 92%;
 	list-style-type: none;
-	padding: 0;
-	margin: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -163,7 +158,7 @@ body {
 }
 
 .footer {
-	margin-top: 1rem;
+	margin-top: 1.5rem;
 	color: greenyellow;
 	font-weight: 500;
 }
